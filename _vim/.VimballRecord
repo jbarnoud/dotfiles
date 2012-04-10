@@ -1,0 +1,1 @@
+gromacs.vba: call delete('/home/temple/santuz/.vim/syntax/mdp.vim')|call delete('/home/temple/santuz/.vim/syntax/ndx.vim')|call delete('/home/temple/santuz/.vim/syntax/top.vim')|call delete('/home/temple/santuz/.vim/ftdetect/gromacs.vim')|call delete('/home/temple/santuz/.vim/ftplugin/gromacs.vim')
