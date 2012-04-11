@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
@@ -23,6 +24,7 @@ else
 fi
 
 #Vim Plugins
+
 git submodule sync
 git submodule init
 git submodule update
