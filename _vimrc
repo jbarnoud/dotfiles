@@ -72,3 +72,5 @@ set ttyfast " fast terminal connection
 set wmnu " make command-line completion operates in an enhanced mode
 set showmode " show current mode in the status line
 
+"Pathogen
+call pathogen#infect()
