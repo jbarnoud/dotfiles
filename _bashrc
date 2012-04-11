@@ -131,6 +131,11 @@ alias gromacs455="source /usr/local/gromacs-4.5.5/bin/GMXRC"
 #Ptools
 export PYTHONPATH=$PYTHONPATH:/home/temple/santuz/tools/Ptools/ptools-1.0.4c/
 
+#Colors in less
+#http://superuser.com/questions/117841/get-colors-in-less-command
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+
 #Divers Fonctions
 
 # Functions
