@@ -133,8 +133,8 @@ export PYTHONPATH=$PYTHONPATH:/home/temple/santuz/tools/Ptools/ptools-1.0.4c/
 
 #Colors in less
 #http://superuser.com/questions/117841/get-colors-in-less-command
-export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
+#export LESS='-R'
+#export LESSOPEN='|~/.lessfilter %s'
 
 #Divers Fonctions
 
