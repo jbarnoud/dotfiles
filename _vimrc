@@ -43,11 +43,11 @@ set suffixes=.jpg,.png,.jpeg,.gif,.bak,~,.swp,.swo,.o,.la
 
 
 " Backup dans ~/.vim/backup
-if filewritable(expand("~/.vim/backup")) == 2 
+"if filewritable(expand("~/.vim/backup")) == 2 
     " comme le répertoire est accessible en écriture,
     " on va l'utiliser.
-	set backupdir=$HOME/.vim/backup
-endif
+"	set backupdir=$HOME/.vim/backup
+"endif
 
 "Activation de la syntaxe
 if has("syntax")
