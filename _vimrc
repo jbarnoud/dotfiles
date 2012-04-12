@@ -29,7 +29,7 @@ set  expandtab
 set backspace=indent,eol,start
 
 " Activer la sauvegarde
-set backup
+"set backup
 
 " un historique raisonnable
 set history=100
