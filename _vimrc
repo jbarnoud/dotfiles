@@ -76,3 +76,11 @@ set showmode " show current mode in the status line
 
 "Pathogen
 call pathogen#infect()
+
+"256 Colors
+set t_Co=256
+"Color Scheme
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
