@@ -4,6 +4,8 @@ scriptencoding utf-8
 " VIM Perso
 "==============
 
+runtime bundle/pathogen/autoload/pathogen.vim
+
 " Mode non compatible avec Vi
 set nocompatible 
 

@@ -1,4 +1,7 @@
-[submodule "_vim/bundle/fugitive"]
+[submodule "_vim/bundle/pathogen"]
+	path = _vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "_vim/bundle/surround"]
 	path = _vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "_vim/bundle/surround"]
