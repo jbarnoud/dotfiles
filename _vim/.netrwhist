@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/temple/santuz/.vim/syntax'
 let g:netrw_dirhist_2='/home/temple/santuz/tests/cuda/libsvm-3.0-GPUx32-Linux'
 let g:netrw_dirhist_3='/home/temple/santuz/projets/dotfiles/_vim/bundle/surround'
+let g:netrw_dirhist_4='/home/temple/santuz/tests/gromacs'
+let g:netrw_dirhist_5='/home/temple/santuz/projets/RhCG/PMF-NH3_marc/US/tpr-files'
+let g:netrw_dirhist_6='/home/temple/santuz/tests/dbturn/data/test_3ask'
+let g:netrw_dirhist_7='/home/temple/santuz/tests/dbturn/data/test_2atc'

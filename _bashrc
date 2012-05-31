@@ -122,6 +122,7 @@ alias riena="ssh root@iena"
 alias www="ssh root@192.168.10.201"
 alias jade="ssh cathy@jade.cines.fr"
 alias denfert="ssh root@denfert"
+alias mti="ssh dsimb@81.194.29.55"
 
 #Gromacs
 alias gromacs407="source /usr/local/gromacs-4.0.7/bin/GMXRC"
