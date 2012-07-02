@@ -21,7 +21,7 @@ let g:pylint_onwrite = 0
 
 set autochdir
 
-"vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 "nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 " Ignore unreadable or useless files when autocomplete filenames
@@ -47,3 +47,17 @@ let mapleader="!"
 command TT TlistToggle
 command CT !ctags -R
 
+" Navigation between splited windows using Alt+arrow
+" http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
+" Smart home and smart end
+" http://vim.wikia.com/wiki/Smart_home
+noremap <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0' : '^')
+noremap <expr> <End> (col('.') == match(getline('.'), '\s*$') ? '$' : 'g_')
+vnoremap <expr> <End> (col('.') == match(getline('.'), '\s*$') ? '$h' : 'g_')
+imap <Home> <C-o><Home>
+imap <End> <C-o><End>
