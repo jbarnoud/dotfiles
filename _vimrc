@@ -32,7 +32,7 @@ set wildignore+=*~,*.swp,*.tmp
 
 " Use pathogen to handle packages from git repo
 " https://github.com/tpope/vim-pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " Fancy status line
