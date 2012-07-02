@@ -3,8 +3,7 @@
 
 .vimrc: my vim configuration
 
-.screenrc: my screen configuration
-
+.fonts: local fonts
 
 ## Instructions
 ### Creating source files
@@ -17,6 +16,10 @@ For example:
 becomes
 
     ${HOME}/.bashrc
+
+### Add a git submodule
+
+    git submodule add <url> <destination path>
 
 ### Installing source files
 It's as simple as running:
