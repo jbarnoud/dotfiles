@@ -19,3 +19,6 @@
 [submodule "_vim/bundle/pylint"]
 	path = _vim/bundle/pylint
 	url = https://github.com/vim-scripts/pylint.vim.git
+[submodule "_vim/bundle/autoproto"]
+	path = _vim/bundle/autoproto
+	url = https://github.com/vim-scripts/autoproto.vim.git
