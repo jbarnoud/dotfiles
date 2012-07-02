@@ -1,0 +1,7 @@
+[user]
+	name = Jonathan Barnoud
+	email = jonathan@barnoud.net
+[github]
+	user = jbarnoud
+[diff]
+	external = diff.py
