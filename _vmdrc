@@ -1,0 +1,8 @@
+rotate x by 90
+source ~/.bin/cg_bonds.tcl
+display projection Orthographic
+menu main on
+after idle {
+    pbc box
+    menu tkcon on
+}
