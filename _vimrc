@@ -1,86 +1,41 @@
-scriptencoding utf-8
+set nocompatible
 
-"==============
-" VIM Perso
-"==============
+syntax on
+set background=dark
+set t_Co=256  " 256 color terminal
 
-runtime bundle/pathogen/autoload/pathogen.vim
-
-" Mode non compatible avec Vi
-set nocompatible 
-
-"Numerotation
-set number
-
-"Definition tabulation
+set autoindent
+set expandtab
+set copyindent
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
-"Auto-indentation
-"set autoindent
+set encoding=utf-8
 
 filetype plugin on
+filetype indent on
 
-syntax enable
+autocmd FileType python compiler pylint
+let g:pylint_onwrite = 0
 
-"supprime les tabulations et met des espaces
-set  expandtab  
+set autochdir
 
-" Le backspace
-set backspace=indent,eol,start
+"vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+"nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
-" Activer la sauvegarde
-"set backup
+" Ignore unreadable or useless files when autocomplete filenames
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+set wildignore+=.DS_Store,.git,.hg,.svn
+set wildignore+=*~,*.swp,*.tmp
 
-" un historique raisonnable
-set history=100
-
-" undo, pour revenir en arrière
-set undolevels=150
-
-
-" Suffixes à cacher
-set suffixes=.jpg,.png,.jpeg,.gif,.bak,~,.swp,.swo,.o,.la
-
-
-" Backup dans ~/.vim/backup
-"if filewritable(expand("~/.vim/backup")) == 2 
-    " comme le répertoire est accessible en écriture,
-    " on va l'utiliser.
-"	set backupdir=$HOME/.vim/backup
-"endif
-
-"Activation de la syntaxe
-if has("syntax")
-    syntax on
-endif
-
-" Afficher la position du curseur
-set ruler
-
-" Tout ce qui concerne la recherche. Incrémentale
-" avec un highlight. Elle prend en compte la
-" différence entre majuscule/minuscule.
-set incsearch
-set noignorecase
-set infercase
-
-set  wildmenu    "affiche le menu
-set  wildmode =list:longest,list:full    "affiche toutes les possibilités
-set  wildignore =*.o,*.r,*.so,*.sl,*.tar,*.tgz    "ignorer certains types de fichiers pour la complétion des includes
-
-imap  <C-Space> <C-X><C-O>
-
-set ttyfast " fast terminal connection
-set wmnu " make command-line completion operates in an enhanced mode
-set showmode " show current mode in the status line
-
-"Pathogen
+" Use pathogen to handle packages from git repo
+" https://github.com/tpope/vim-pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-"256 Colors
-set t_Co=256
-"Color Scheme
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
-
+" Fancy status line
+set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
