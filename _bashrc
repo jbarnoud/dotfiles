@@ -155,7 +155,7 @@ export PS1='\u@\h \w$(__git_ps1 " (%s)") \$ '
 # need ~/.lessfilter and python package Pygments
 # http://superuser.com/questions/117841/get-colors-in-less-command
 export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
+export LESSOPEN='|~/.bin/lessfilter %s'
 
 alias istat="ssh iena qstat | sed -r 's/ +$//g' | colout '^(Job|---)(.*)' red,red bold,bold | colout barnoud red bold | colout '[0-9]+ (Q) batch' yellow | colout '[0-9]+ (C) batch' red | colout '[0-9:]+ (R) batch' green bold | less -pbarnoud"
 alias ishow="ssh iena showq | colout barnoud red bold | colout '^ACTIVE .*' green bold | colout '^IDLE .*' yellow bold | colout '^BLOCKED .*' red bold | colout 'Running' green | colout Idle yellow | colout Active green | colout Blocked red"
