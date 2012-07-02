@@ -39,3 +39,5 @@ call pathogen#infect()
 set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+
+let mapleader="!"

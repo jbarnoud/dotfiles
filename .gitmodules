@@ -22,3 +22,6 @@
 [submodule "_vim/bundle/autoproto"]
 	path = _vim/bundle/autoproto
 	url = https://github.com/vim-scripts/autoproto.vim.git
+[submodule "_vim/bundle/nerdcommenter"]
+	path = _vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
