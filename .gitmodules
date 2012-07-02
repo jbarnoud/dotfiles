@@ -1,15 +1,12 @@
-[submodule "_vim/bundle/pathogen"]
-	path = _vim/bundle/pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "_vim/bundle/fugitive"]
-	path = _vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "_vim/bundle/gromacs"]
 	path = _vim/bundle/gromacs
 	url = git@github.com:jbarnoud/vim-gromacs.git
 [submodule "_vim/bundle/git"]
 	path = _vim/bundle/git
 	url = https://github.com/tpope/vim-git.git
-[submodule "_vim/bundle/powerline"]
-	path = _vim/bundle/powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "_vim/bundle/fugitive"]
+	path = _vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "_vim/bundle/pathogen"]
+	path = _vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
