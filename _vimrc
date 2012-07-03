@@ -60,6 +60,10 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+imap <silent> <A-Up> <ESC>:wincmd k<CR>i
+imap <silent> <A-Down> <ESC>:wincmd j<CR>i
+imap <silent> <A-Left> <ESC>:wincmd h<CR>i
+imap <silent> <A-Right> <ESC>:wincmd l<CR>i
 
 "TAB navigation
 nmap <C-Left> :tabprevious<cr>
