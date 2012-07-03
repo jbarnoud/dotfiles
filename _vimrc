@@ -13,6 +13,9 @@ set shiftwidth=4
 
 set encoding=utf-8
 
+set autowrite " Automatically save before commands like :next and :make
+set pastetoggle=<F2>
+
 filetype plugin on
 filetype indent on
 
