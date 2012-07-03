@@ -16,6 +16,10 @@ set encoding=utf-8
 set autowrite " Automatically save before commands like :next and :make
 set pastetoggle=<F2>
 
+set showcmd             " Show (partial) command in status line.
+set showmatch           " Show matching brackets.
+
+
 filetype plugin on
 filetype indent on
 
@@ -56,6 +60,16 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+"TAB navigation
+nmap <C-Left> :tabprevious<cr>
+nmap <C-Right> :tabnext<cr>
+imap <C-Left> <ESC>:tabprevious<cr>i
+imap <C-Right> <ESC>:tabnext<cr>i
+nmap <C-t> :tabnew<cr>
+imap <C-t> <ESC>:tabnew<cr>i
+map <C-w> :tabclose<cr>
+imap <C-w> <ESC>:tabclose<cr>
 
 " Smart home and smart end
 " http://vim.wikia.com/wiki/Smart_home
