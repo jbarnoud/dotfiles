@@ -54,6 +54,9 @@ let mapleader="!"
 command TT TlistToggle
 command CT !ctags -R
 
+" Taglist
+let Tlist_Auto_Update = 1
+
 " Navigation between splited windows using Alt+arrow
 " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
 nmap <silent> <A-Up> :wincmd k<CR>
