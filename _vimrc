@@ -29,7 +29,7 @@ let g:pylint_onwrite = 0
 set autochdir
 
 vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
-"nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+imap <C-v> <ESC>:call setreg("\"",system("xclip -o -selection clipboard"))<CR>p<CR>i
 
 " Ignore unreadable or useless files when autocomplete filenames
 set wildignore+=*.a,*.o
@@ -56,6 +56,14 @@ let mapleader="!"
 " Create shortcuts
 command TT TlistToggle
 command CT !ctags -R
+
+" Color the 80th column
+if version >= 703
+    set colorcolumn=80
+endif
+
+" Backspace should work
+set backspace=indent,eol,start
 
 " Taglist
 let Tlist_Auto_Update = 1
