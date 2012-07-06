@@ -142,6 +142,9 @@ export DSSP=$HOME/local/bin/dssp-2.0.4-linux-amd64
 # LLVM
 export PATH=:$HOME/local/llvm/bin:$PATH
 
+# VIM
+export PATH=$HOME/local/vim/bin:$PATH
+
 alias wl='wc -l'
 alias gromacs4='source $HOME/local/gromacs-4.5.3/bin/GMXRC'
 alias ipython='ipython --pylab'

@@ -47,6 +47,9 @@ set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
+" Set path for LangageTool grammar checking
+let g:languagetool_jar=$HOME . '/src/languagetool/dist/LanguageTool.jar'
+
 " Change the laeder from \ to !
 let mapleader="!"
 
@@ -63,18 +66,18 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
-imap <silent> <A-Up> <ESC>:wincmd k<CR>i
-imap <silent> <A-Down> <ESC>:wincmd j<CR>i
-imap <silent> <A-Left> <ESC>:wincmd h<CR>i
-imap <silent> <A-Right> <ESC>:wincmd l<CR>i
+imap <silent> <A-Up> <ESC>:wincmd k<CR>a
+imap <silent> <A-Down> <ESC>:wincmd j<CR>a
+imap <silent> <A-Left> <ESC>:wincmd h<CR>a
+imap <silent> <A-Right> <ESC>:wincmd l<CR>a
 
 "TAB navigation
 nmap <C-Left> :tabprevious<cr>
 nmap <C-Right> :tabnext<cr>
-imap <C-Left> <ESC>:tabprevious<cr>i
-imap <C-Right> <ESC>:tabnext<cr>i
+imap <C-Left> <ESC>:tabprevious<cr>a
+imap <C-Right> <ESC>:tabnext<cr>a
 nmap <C-t> :tabnew<cr>
-imap <C-t> <ESC>:tabnew<cr>i
+imap <C-t> <ESC>:tabnew<cr>a
 map <C-w> :tabclose<cr>
 imap <C-w> <ESC>:tabclose<cr>
 

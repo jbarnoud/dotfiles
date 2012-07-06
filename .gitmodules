@@ -25,3 +25,9 @@
 [submodule "_vim/bundle/nerdcommenter"]
 	path = _vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "_vim/bundle/LangageTool"]
+	path = _vim/bundle/LangageTool
+	url = https://github.com/vim-scripts/LanguageTool.git
+[submodule "_vim/bundle/showmarks"]
+	path = _vim/bundle/showmarks
+	url = https://github.com/vim-scripts/showmarks--Politz.git
