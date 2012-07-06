@@ -67,6 +67,8 @@ set backspace=indent,eol,start
 
 " Taglist
 let Tlist_Auto_Update = 1
+" Close VIM if taglist is the only window
+let Tlist_Exit_OnlyWindow = 1
 
 " Navigation between splited windows using Alt+arrow
 " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
