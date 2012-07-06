@@ -13,9 +13,9 @@ function! ToggleMarks()
     endif
 endfunction
 " By default show the marks
-if exists('loaded_showmarks')
-    call ToggleMarks()
-endif
+"if exists('loaded_showmarks')
+    "call ToggleMarks()
+"endif
 " Restore the initial terminal width when VIM is closed
 au VimLeave * let &columns=g:old_columns
 
