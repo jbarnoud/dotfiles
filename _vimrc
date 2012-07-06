@@ -70,6 +70,10 @@ let Tlist_Auto_Update = 1
 " Close VIM if taglist is the only window
 let Tlist_Exit_OnlyWindow = 1
 
+" Gundo
+" http://sjl.bitbucket.org/gundo.vim/
+nnoremap <F5> :GundoToggle<CR>
+
 " Navigation between splited windows using Alt+arrow
 " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
 nmap <silent> <A-Up> :wincmd k<CR>
