@@ -7,8 +7,9 @@
 
 if [[ ! $SSH_AUTH_SOCK ]]
 then
-    ssh-agent bash
-elif [[ $(ssh-add -L | grep "The agent has no identities." | wc -l) -ne 0 ]]
+    eval $(ssh-agent)
+fi
+if [[ $(ssh-add -L | grep "The agent has no identities." | wc -l) -ne 0 ]]
 then
     ssh-add
 fi
