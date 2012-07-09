@@ -59,7 +59,7 @@ command CT !ctags -R
 
 " Color the 80th column
 if version >= 703
-    set colorcolumn=80
+    set colorcolumn=81
 endif
 
 " Backspace should work
