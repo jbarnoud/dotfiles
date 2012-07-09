@@ -92,8 +92,8 @@ imap <C-Left> <ESC>:tabprevious<cr>a
 imap <C-Right> <ESC>:tabnext<cr>a
 nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>a
-map <C-w> :tabclose<cr>
-imap <C-w> <ESC>:tabclose<cr>
+"map <C-w> :tabclose<cr>
+"imap <C-w> <ESC>:tabclose<cr>
 
 " Smart home and smart end
 " http://vim.wikia.com/wiki/Smart_home
@@ -102,3 +102,10 @@ noremap <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0' : '^')
 "vnoremap <expr> <End> (col('.') == match(getline('.'), '\s*$') ? '$h' : 'g_')
 imap <Home> <C-o><Home>
 "imap <End> <C-o><End>
+
+" Resize the active window is there is more than one
+" http://vim.wikia.com/wiki/VimTip427
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
