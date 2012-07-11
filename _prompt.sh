@@ -42,8 +42,8 @@ prompt_vcs() {
 trans_color() {
     before_color=$1
     after_color=$2
-    echo "\[\e[38;5;${before_color}m\]\[\e[48;5;${after_color}m\]⮀\[\e[m\]\[\e[48;5;${after_color}m\]"
+    echo "\[\e[38;5;${before_color}m\]\[\e[48;5;${after_color}m\]⮀\[\e[37m\]\[\e[48;5;${after_color}m\]"
 }
 export PROMPT_DIRTRIM=2
-export PS1="\[\e[48;5;${section_hist}m\]"'\!'$(trans_color ${section_hist} ${section_user})'\u@\h'$(trans_color ${section_user} ${section_dir})'\w$(prompt_vcs)'$(trans_color ${section_dir} ${section_end})${nocol}
+export PS1="\[\e[1m\]\[\e[48;5;${section_hist}m\]"'\!'$(trans_color ${section_hist} ${section_user})'\u@\h'$(trans_color ${section_user} ${section_dir})'\w$(prompt_vcs)'$(trans_color ${section_dir} ${section_end})${nocol}
 
