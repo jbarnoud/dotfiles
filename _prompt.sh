@@ -44,5 +44,6 @@ trans_color() {
     after_color=$2
     echo "\[\e[38;5;${before_color}m\]\[\e[48;5;${after_color}m\]⮀\[\e[m\]\[\e[48;5;${after_color}m\]"
 }
-export PS1="\[\e[48;5;${section_hist}m\]"'\!'$(trans_color ${section_hist} ${section_user})'\u@\h'$(trans_color ${section_user} ${section_dir})'\W$(prompt_vcs)'$(trans_color ${section_dir} ${section_end})${nocol}
+export PROMPT_DIRTRIM=2
+export PS1="\[\e[48;5;${section_hist}m\]"'\!'$(trans_color ${section_hist} ${section_user})'\u@\h'$(trans_color ${section_user} ${section_dir})'\w$(prompt_vcs)'$(trans_color ${section_dir} ${section_end})${nocol}
 
