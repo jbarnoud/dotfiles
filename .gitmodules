@@ -34,3 +34,9 @@
 [submodule "_vim/bundle/gundo"]
 	path = _vim/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "_vim/bundle/pep8"]
+	path = _vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "_vim/bundle/flake8"]
+	path = _vim/bundle/flake8
+	url = https://github.com/nvie/vim-flake8.git

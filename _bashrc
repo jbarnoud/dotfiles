@@ -146,6 +146,9 @@ export PATH=:$HOME/local/llvm/bin:$PATH
 # VIM
 export PATH=$HOME/local/vim/bin:$PATH
 
+# GTG
+export PYTHONPATH=$HOME/src/libarch:$PYTHONPATH
+
 alias wl='wc -l'
 alias gromacs4='source $HOME/local/gromacs-4.5.3/bin/GMXRC'
 alias ipython='ipython --pylab'
@@ -164,3 +167,4 @@ export LESSOPEN='|~/.bin/lessfilter %s'
 
 alias istat="ssh iena qstat | sed -r 's/ +$//g' | colout '^(Job|---)(.*)' red,red bold,bold | colout barnoud red bold | colout '[0-9]+ (Q) batch' yellow | colout '[0-9]+ (C) batch' red | colout '[0-9:]+ (R) batch' green bold | less -pbarnoud"
 alias ishow="ssh iena showq | colout barnoud red bold | colout '^ACTIVE .*' green bold | colout '^IDLE .*' yellow bold | colout '^BLOCKED .*' red bold | colout 'Running' green | colout Idle yellow | colout Active green | colout Blocked red"
+alias jstat="ssh jade.cines.fr qstat | sed -r 's/ +$//g' | colout '^(Job|---)(.*)' red,red bold,bold | colout barnoud red bold | colout '[0-9]+ (Q) batch' yellow | colout '[0-9]+ (C) batch' red | colout '[0-9:]+ (R) batch' green bold | less -pbarnoud"

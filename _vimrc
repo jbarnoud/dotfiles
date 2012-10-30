@@ -17,7 +17,7 @@ set autowrite " Automatically save before commands like :next and :make
 set pastetoggle=<F2>
 
 set showcmd             " Show (partial) command in status line.
-set showmatch           " Show matching brackets.
+"set showmatch           " Show matching brackets.
 
 
 filetype plugin on
@@ -73,6 +73,9 @@ let Tlist_Exit_OnlyWindow = 1
 " Gundo
 " http://sjl.bitbucket.org/gundo.vim/
 nnoremap <F5> :GundoToggle<CR>
+
+" PEP8
+let g:pep8_map='<F6>'
 
 " Navigation between splited windows using Alt+arrow
 " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily

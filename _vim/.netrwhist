@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/alesia/barnoud/work/Aggregation/analysis/thickness'
 let g:netrw_dirhist_2='/home/alesia/barnoud/src/field_hack_gromacs-4.5.3'
 let g:netrw_dirhist_3='/home/alesia/barnoud/src/field_hack_gromacs-4.5.3/src'
 let g:netrw_dirhist_4='/home/alesia/barnoud/src/field_hack_gromacs-4.5.3/src/mdlib'
 let g:netrw_dirhist_5='/home/alesia/barnoud/work/Aggregation/simulations/field_orient/cos_field/4483HD_r1'
+let g:netrw_dirhist_6='/home/alesia/barnoud/dev/xpmconvert.R'
