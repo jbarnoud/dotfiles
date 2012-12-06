@@ -86,11 +86,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -152,8 +147,16 @@ export PATH=$HOME/local/git/bin:$PATH
 # GTG
 export PYTHONPATH=$HOME/src/libarch:$PYTHONPATH
 
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ltr='ls -ltr'
+
 alias wl='wc -l'
-alias gromacs4='source $HOME/local/gromacs-4.5.3/bin/GMXRC'
+alias g453='source $HOME/local/gromacs-4.5.3/bin/GMXRC'
+alias g455='source $HOME/local/gromacs-4.5.5/bin/GMXRC'
+alias g46='source $HOME/local/gromacs-4.6-beta1/bin/GMXRC'
 alias ipython='ipython --pylab'
 alias xo="xdg-open"
 alias dfc="dfc -f"
@@ -172,3 +175,7 @@ export LESSOPEN='|~/.bin/lessfilter %s'
 alias istat="ssh iena qstat | sed -r 's/ +$//g' | colout '^(Job|---)(.*)' red,red bold,bold | colout barnoud red bold | colout '[0-9]+ (Q) batch' yellow | colout '[0-9]+ (C) batch' red | colout '[0-9:]+ (R) batch' green bold | less -pbarnoud"
 alias ishow="ssh iena showq | colout barnoud red bold | colout '^ACTIVE .*' green bold | colout '^IDLE .*' yellow bold | colout '^BLOCKED .*' red bold | colout 'Running' green | colout Idle yellow | colout Active green | colout Blocked red"
 alias jstat="ssh jade.cines.fr qstat | sed -r 's/ +$//g' | colout '^(Job|---)(.*)' red,red bold,bold | colout barnoud red bold | colout '[0-9]+ (Q) batch' yellow | colout '[0-9]+ (C) batch' red | colout '[0-9:]+ (R) batch' green bold | less -pbarnoud"
+
+alias iena="ssh -X iena"
+alias jade="ssh -X jade.cines.fr"
+alias jade2="ssh -X barnoud2@jade.cines.fr"
