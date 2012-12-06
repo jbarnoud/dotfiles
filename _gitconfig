@@ -3,5 +3,5 @@
 	email = jonathan@barnoud.net
 [github]
 	user = jbarnoud
-[diff]
-	external = diff.py
+[alias]
+    meld = difftool --dir-diff -t meld

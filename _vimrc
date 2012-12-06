@@ -26,7 +26,11 @@ filetype indent on
 autocmd FileType python compiler pylint
 let g:pylint_onwrite = 0
 
+" Working directory is the document directory
 set autochdir
+
+" Vertical split open at the right
+set splitright
 
 vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 imap <C-v> <ESC>:call setreg("\"",system("xclip -o -selection clipboard"))<CR>p<CR>i
@@ -36,6 +40,7 @@ set wildignore+=*.a,*.o
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
 set wildignore+=.DS_Store,.git,.hg,.svn
 set wildignore+=*~,*.swp,*.tmp
+set wildignore+=*~,*.pyc
 
 " Use pathogen to handle packages from git repo
 " https://github.com/tpope/vim-pathogen
@@ -58,7 +63,7 @@ command TT TlistToggle
 command CT !ctags -R
 
 " Color the 80th column
-if version >= 703
+if exists('+colorcolumn')
     set colorcolumn=81
 endif
 
@@ -98,6 +103,10 @@ imap <C-t> <ESC>:tabnew<cr>a
 "map <C-w> :tabclose<cr>
 "imap <C-w> <ESC>:tabclose<cr>
 
+"Reselect visual block after indent/outdent 
+vnoremap < <gv
+vnoremap > >gv
+
 " Smart home and smart end
 " http://vim.wikia.com/wiki/Smart_home
 noremap <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0' : '^')
@@ -111,4 +120,9 @@ imap <Home> <C-o><Home>
 if bufwinnr(1)
   map + <C-W>+
   map - <C-W>-
+  map <S-Left> <C-W>>
+  map <S-Right> <C-W><
 endif
+
+"Spellcheck Git commit messages 
+autocmd BufRead COMMIT_EDITMSG setlocal spell!

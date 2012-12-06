@@ -146,6 +146,9 @@ export PATH=:$HOME/local/llvm/bin:$PATH
 # VIM
 export PATH=$HOME/local/vim/bin:$PATH
 
+# GIT
+export PATH=$HOME/local/git/bin:$PATH
+
 # GTG
 export PYTHONPATH=$HOME/src/libarch:$PYTHONPATH
 
@@ -154,6 +157,7 @@ alias gromacs4='source $HOME/local/gromacs-4.5.3/bin/GMXRC'
 alias ipython='ipython --pylab'
 alias xo="xdg-open"
 alias dfc="dfc -f"
+=(){ awk "BEGIN{ print $* }" ;}
 
 #export PS1='\e[01m\e[07m\u@\h \w$(__git_ps1 " (%s)") \$\e[0m\e[0m '
 #export PS1='(\!)\u@\h \w$(__git_ps1 " (%s)") \$ '
