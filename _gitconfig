@@ -5,3 +5,5 @@
 	user = jbarnoud
 [alias]
     meld = difftool --dir-diff -t meld
+[push]
+	default = simple
