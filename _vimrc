@@ -27,7 +27,8 @@ autocmd FileType python compiler pylint
 let g:pylint_onwrite = 0
 
 " Working directory is the document directory
-set autochdir
+"set autochdir
+autocmd BufEnter * silent! lcd %:p:h
 
 " Vertical split open at the right
 set splitright
