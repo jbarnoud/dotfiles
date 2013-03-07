@@ -40,3 +40,12 @@
 [submodule "_vim/bundle/flake8"]
 	path = _vim/bundle/flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "_vim/bundle/autocomplpop"]
+	path = _vim/bundle/autocomplpop
+	url = https://hg@bitbucket.org/ns9tks/vim-autocomplpop
+[submodule "_vim/bundle/jedi"]
+	path = _vim/bundle/jedi
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "_vim/bundle/WC"]
+	path = _vim/bundle/WC
+	url = https://github.com/vim-scripts/WC.vim.git
