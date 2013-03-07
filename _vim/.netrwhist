@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/alesia/barnoud/src/gromacs-4.6-beta1/share/template'
+let g:netrw_dirhist_2='/home/alesia/barnoud/local/dotfiles/_vim/bundle/clang_complete'
+let g:netrw_dirhist_3='/home/alesia/barnoud/local/dotfiles/_vim/bundle/clang_complete/doc'
+let g:netrw_dirhist_4='/home/alesia/barnoud/web/pelican/templates'
+let g:netrw_dirhist_5='/home/alesia/barnoud/liquids/liquids/heptane'

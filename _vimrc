@@ -19,9 +19,28 @@ set pastetoggle=<F2>
 set showcmd             " Show (partial) command in status line.
 "set showmatch           " Show matching brackets.
 
+colorscheme inkpot
 
 filetype plugin on
 filetype indent on
+
+autocmd BufWritePre *.gro call Update_number_of_atoms()
+autocmd FileType mdp.gromacs set omnifunc=mdpcomplete#Complete
+autocmd FileType mdp.gromacs imap <C-n> <C-x><C-o>
+autocmd FileType mdp.gromacs imap <silent> <buffer> = = <C-X><C-O>
+
+function! Meet(text)
+    return len(a:text)
+endfunction
+
+function! DoNothing()
+    return 1
+endfunction
+
+let g:acp_behavior = {'mdp.gromacs': [{'command' : "\<C-x>\<C-o>",
+    \ 'commandfunc': 'mdpcomplete#Complete',
+    \ 'meets': 'Meet', 'onPopupClose': 'DoNothing', 'repeat': 1}],
+                     \'*': []}
 
 autocmd FileType python compiler pylint
 let g:pylint_onwrite = 0
@@ -127,3 +146,11 @@ endif
 
 "Spellcheck Git commit messages 
 autocmd BufRead COMMIT_EDITMSG setlocal spell!
+
+let g:clang_complete_copen = 1
+let g:clang_complete_macros = 1
+let g:clang_complete_patterns = 1
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'clang_complete'
+let g:clang_use_library = 1
+map <F3> <ESC>:call g:ClangUpdateQuickFix()<CR>
